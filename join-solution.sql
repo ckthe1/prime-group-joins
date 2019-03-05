@@ -30,8 +30,8 @@ JOIN "customers" ON "addresses"."customer_id" = "customers"."id"
 GROUP BY "customers"."first_name", "customers"."last_name";
 
 -- NOTE:
--- It is OK
--- if those without orders are not included in results.
+-- It is OK 
+if those without orders are not included in results.
 -- How many customers do we have?
 SELECT COUNT(*)
 FROM "customers";
