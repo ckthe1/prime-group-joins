@@ -27,8 +27,7 @@ SELECT "customers"."first_name", "customers"."last_name", COUNT(*)
 FROM "orders" 
 JOIN "addresses" ON "orders"."address_id" = "addresses"."id"
 JOIN "customers" ON "addresses"."customer_id" = "customers"."id"
-GROUP BY "customers"."first_name", "customers"."last_name";
-
+GROUP BY "customers"."first_name", "customers"."last_name";""
 -- NOTE: It is OK if those without orders are not included in results.
 -- How many customers do we have?
 SELECT COUNT(*)
